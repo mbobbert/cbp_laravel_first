@@ -18,7 +18,12 @@ Route::get('/blog', 'Blog\BlogController@index');
 Route::get('/blog/{id}', 'Blog\BlogController@honza');
 
 
-
 Route::get('/portfolio', 'PortfolioController@index');
-
 Route::get('/hello', 'FirstController@index');
+
+
+Route::get('/form', 'FormController@index');
+Route::get('/form/create', 'FormController@create');
+Route::post('/form', 'FormController@store');
+
+Route::get('/pets', 'PetContoller@index');
